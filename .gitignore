@@ -1,0 +1,16 @@
+target
+bin
+.idea
+.vscode
+.classpath
+.settings
+*.iml
+.gradle
+build
+out
+
+src/main/resources/application-local.yml
+tools/dbdiagram/dbdocs
+
+.env
+.envrc
