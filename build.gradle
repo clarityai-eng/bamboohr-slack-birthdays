@@ -45,3 +45,8 @@ java {
 test {
     useJUnitPlatform()
 }
+release {
+    git {
+        requireBranch = 'main'
+    }
+}
