@@ -31,7 +31,7 @@ jobs:
         run: ./gradlew build
 
       - name: list dir
-        run: ls -la build
+        run: ls -la build/libs
 
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v2
