@@ -13,7 +13,7 @@ ARG UID=1001
 RUN mkdir -p ${SERVICE_HOME}
 WORKDIR ${SERVICE_HOME}
 
-COPY ./build/libs/bamboohr-slack-birthdays-*.jar ./app.jar
+COPY build/libs/bamboohr-slack-birthdays-*.jar ./app.jar
 
 RUN addgroup --system --gid ${GUID} clarity && \
     adduser --system --uid ${UID} --ingroup clarity clarity
