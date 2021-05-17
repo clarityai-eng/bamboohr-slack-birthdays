@@ -27,6 +27,7 @@ public class Main {
   }
 
   private void run(URL iCalFeedUrl, URL slackWehHookUrl, Date date) {
+    log.info("Looking for BirthDays events for {}", date);
     List<BirthdaysSupplier.Birthday> birthdays = new BirthdaysSupplier(iCalFeedUrl, date).get();
 
     if (!birthdays.isEmpty()) {
