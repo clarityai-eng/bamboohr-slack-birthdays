@@ -42,7 +42,7 @@ public class Main {
 
   private String createCongratsMessage(List<Birthday> birthdays) {
     String people = mergeNames(birthdays.stream().map(Birthday::getName).collect(Collectors.toList()));
-    return String.format("Let's congratulate %s for his birthday!! :birthday: :tada:", people);
+    return String.format("Let's congratulate %s on their birthday!! :birthday: :tada:", people);
   }
 
   private String mergeNames(List<String> names) {
